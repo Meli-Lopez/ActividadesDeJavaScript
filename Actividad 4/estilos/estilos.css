@@ -1,0 +1,33 @@
+/*
+div#respuesta{
+    display: none;
+}
+    .caja{
+        width: 280px;
+        height: 80px;
+        top: 30px; left: 400px;
+    }
+
+input{
+    margin-top: 10px;
+}
+
+body {
+    background-color: rgba(198, 120, 236, 0.936);
+    text-align: center;
+}
+
+.titulo{
+    font-family: Lucida Handwriting;
+    text-align: center;
+}
+
+button{
+    background-color: rgba(22, 214, 214, 0.972);
+    column-rule-color: black;
+    margin-top: 10px;
+}
+
+.form-select{
+    margin-top: 10px;
+}*/

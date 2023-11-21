@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/restaurante.js">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Restaurante Virtual</title>
+</head>
+<body>
+    <h1 class="titulo">Calculadora del Restaurante</h1>
+    <!--  seleccionar el tipo de plato -->
+    <label for="tipoPlato">Tipo de Plato:</label>
+    <select id="tipoPlato">
+        <option value="Plato1">Spaghetti</option>
+        <option value="Plato2">Arroz con pollo</option>
+        <option value="Plato3">Sancocho de gallina</option>
+    </select>
+    <br>
+    <!-- Ingresar la cantidad de platos -->
+    <label for="cantidadPlatos">Cantidad de Platos:</label>
+    <input type="number" id="cantidadPlatos"> </br>
+    <br>
+    <!-- seleccionar el tipo de bebida -->
+    <label for="bebida">Bebida:</label>
+    <select id="bebida">
+        <option value="Bebida1">Gaseosa</option>
+        <option value="Bebida2">Limonada</option>
+        <option value="Bebida3">Jugo natural</option>
+    </select>
+    <br>
+    <!-- Ingresar la cantidad de bebidas -->
+    <label for="cantidadBebidas">Cantidad de Bebidas:</label>
+    <input type="number" id="cantidadBebidas">
+    <br>
+    <!-- Boton que ejecuta la funcion calcularTotal() -->
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <!-- Muestra el resultado del calculo -->
+    <p id="resultado"></p>
+
+    <!-- Script de JavaScript que realiza el calculo -->
+    <script>
+        function calcularTotal() {
+            // Obtener el tipo de plato y la cantidad de platos seleccionados
+            var tipoPlato = document.getElementById("tipoPlato").value;
+            var cantidadPlatos = parseInt(document.getElementById("cantidadPlatos").value);
+
+            // Obtener el tipo de bebida y la cantidad de bebidas seleccionadas
+            var bebida = document.getElementById("bebida").value;
+            var cantidadBebidas = parseInt(document.getElementById("cantidadBebidas").value);
+
+            // Definir los precios de los platos en objetos
+            var preciosPlatos = {
+                "Plato1": 30000,
+                "Plato2": 15000,
+                "Plato3": 25000
+            };
+            // Definir los precios de las bebidas en objetos
+            var precioBebida = {
+                "Bebida1": 3000,
+                "Bebida2": 2500,
+                "Bebida3": 5000
+            };
+
+            // Calcular el costo total de los platos y las bebidas
+            var totalPlatos = preciosPlatos[tipoPlato] * cantidadPlatos;
+            var totalBebidas = precioBebida[bebida] * cantidadBebidas;
+            var total = totalPlatos + totalBebidas;
+
+            // Mostrar el resultado en el elemento con el id "resultado"
+            var resultado = document.getElementById("resultado");
+            resultado.textContent = "Total a pagar: $" + total;
+        }
+    </script>
+</body>
+</html>
+

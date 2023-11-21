@@ -1,0 +1,30 @@
+div#respuesta{
+    display: none;
+}
+    .caja{
+        width: 280px;
+        height: 80px;
+        top: 30px; left: 400px;
+    }
+
+input{
+    margin-top: 10px;
+}
+
+body {
+    background-color: rgba(198, 120, 236, 0.936);
+}
+
+.titulo{
+    font-family: Lucida Handwriting;
+}
+
+button{
+    background-color: rgb(67, 207, 109);
+    column-rule-color: black;
+    margin-top: 10px;
+}
+
+.form-select{
+    margin-top: 10px;
+}
