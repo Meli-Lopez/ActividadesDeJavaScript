@@ -1,0 +1,52 @@
+body {
+    font-family: Times New Roman; /* Tipo de fuente para el cuerpo del documento */
+    background-color: #f8f9fa;  /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    background-image: url('/img/img.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajuste de la imagen de fondo en el tamaño del navegador*/
+}
+
+.container {
+    margin-top: 20px; /* Margen superior para el contenedor */
+}
+
+/* Estilos para los libros */
+.col {
+    background-color: #fff; /* Color de fondo para las columnas */
+    border: 1px solid #c4b3b3;/* Borde con sombra */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen externo */
+    border-radius: 8px;/* Bordes redondeados */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+h1 {
+    font-family: Comic Sans MS; /* Tipo de fuente para el encabezado 1 */
+}
+
+/* Estilos para el carrito */
+h4 {
+    margin-top: 20px; /* Margen superior para el encabezado 4 */
+}
+
+#carritoLista {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+#carritoLista li {
+    margin-bottom: 5px; /* Margen inferior para los elementos de la lista */
+}
+
+/* Estilos para el total de la compra */
+#totalCompra {
+    font-weight: bold; /* Peso de la fuente en negrita */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+    margin-top: 10px; /* Margen superior para el total de la compra */
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-top: 10px; /* Margen superior para los botones */
+}
