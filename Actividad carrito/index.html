@@ -14,15 +14,25 @@
     <div class="container"> <!-- Clase container de Bootstrap para el diseño -->
         <div class="row"> <!-- Clase row de Bootstrap para el diseño -->
             <div class="col"> <!-- Clase col de Bootstrap para el diseño -->
-                <h3>Libro 1 </h3> 
+                <h3>Libro <br>
+                    Como veo el mundo 
+                 </h3> 
+                <img src="/img/libro1.jpg" alt="30">
+                <br>
                 <p>Precio: $<span id="libro1Precio">40.000</span></p> <!-- Parrafo que muestra el precio del primer libro -->
-                <button type="button" class="btn btn-outline-success" onclick="agregarAlCarrito('Libro 1', 40000)">Agregar al carrito</button> <!-- Boton para agregar el primer libro al carrito -->
+                <button type="button" class="btn btn-outline-success" onclick="agregarAlCarrito('Libro 1', 40000)"> + </button> <!-- Boton para agregar el primer libro al carrito -->
+                <button type="button" class="btn btn-outline-danger" onclick="quitarAlCarrito('Libro 1', 40000)"> - </button> 
             </div>
             
             <div class="col"> <!-- Clase col de Bootstrap para el diseño -->
-                <h3>Libro 2</h3> 
+                <h3>Libro <br>
+                    El jardin de las mariposas
+                </h3> 
+                <br>
+                <img src="/img/libro2.jpg" alt="30">
                 <p>Precio: $<span id="libro2Precio">20.000</span></p> <!-- Parrafo que muestra el precio del segundo libro -->
-                <button type="button" class="btn btn-outline-success" onclick="agregarAlCarrito('Libro 2', 20000) ">Agregar al carrito</button> <!-- Boton para agregar el segundo libro al carrito -->
+                <button type="button" class="btn btn-outline-success" onclick="agregarAlCarrito('Libro 2', 20000) "> + </button> <!-- Boton para agregar el segundo libro al carrito -->
+                <button type="button" class="btn btn-outline-danger" onclick="quitarAlCarrito('Libro 2', 20000)"> - </button> 
             </div>
         </div>
 
@@ -32,8 +42,8 @@
             <div class="col"> <!-- Clase col de Bootstrap para el diseño -->
                 <h4>Libros seleccionados</h4> 
                 <ul id="carritoLista"></ul> <!-- Lista no ordenada para mostrar los libros seleccionados -->
-                <p>Total: <span id="totalCompra">0</span></p> <!-- Parrafo que muestra el total de la compra -->
-                <button type="button" class="btn btn-outline-primary" onclick="calcularTotal()">Calcular Total</button> <!-- Boton para calcular el total de la compra -->
+                <p>Total: <span id="totalCompra"></span></p> <!-- Parrafo que muestra el total de la compra -->
+                <button type="button" class="btn btn-outline-primary" onclick="habilitarCalcularTotal()">Calcular Total</button>
                 <button type="button" class="btn btn-outline-danger" onclick="resetearCarrito()">Resetear Carrito</button> <!-- Boton para resetear el carrito de compras -->
             </div>
         </div>
